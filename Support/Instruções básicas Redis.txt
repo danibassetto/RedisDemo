@@ -1,0 +1,71 @@
+﻿Como instalar redis no Windows? 
+
+https://github.com/microsoftarchive/redis/releases
+
+- Instalar e executar o arquivo msi
+- Marcar opção de criar variável de ambiente durante a instalação
+
+=========================================================================================
+
+Como instalar o AnotherRedisDesktopManager no Windows?
+
+https://github.com/qishibo/AnotherRedisDesktopManager/releases
+
+- Instalar o exe
+
+=========================================================================================
+
+No prompt:
+
+redis-cli (serve para usar o cli do redis)
+
+redis-server (ativar o servidor redis)
+
+=========================================================================================
+
+Alguns comandos populares para uso no cli:
+
+Comando "ping" 
+responde pong caso esteja com servidor disponível
+
+Comando "keys *" 
+retorna todas as chaves
+
+Comando "set nome chave valor" 
+cria uma chave-valor
+
+Comando "get nome_chave" 
+retorna o valor da chave
+
+Comando "del nome chave" 
+apaga uma chave
+
+Comando "setex nome_chave valor_ttl valor" 
+atribui um tempo de vida para um registro
+
+Comando "ttl nome_chave" 
+consulta o tempo de vida
+
+Comando "setnx nome chave valor" 
+atribui mas não deixa que o valor antigo seja substituído, caso já tenha algum
+
+Comando "strlen nome_chave"
+retorna o tamanho da string do valor dessa chave
+
+Comando "mset nome_chave1 valor1 nome_chave2 valor2" 
+serve para inserir em lote
+
+Comando "decr nome_chave" 
+decrementa um valor inteiro
+
+Comando "incr nome_chave" 
+incrementa um valor inteiro
+
+Comando "incrby nome_chave numero" 
+incrementa o valor da chave com o valor informado
+
+Comando "decrby nome_chave numero" 
+decrementa o valor da chave com o valor informado
+
+Comando "append nome_chave "incremento"" 
+concatena o incremento ao valor da chave

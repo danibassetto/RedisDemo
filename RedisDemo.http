@@ -1,0 +1,27 @@
+@RedisDemo_HostAddress = https://localhost:7297
+
+DELETE {{RedisDemo_HostAddress}}/api/cache
+
+###
+
+POST {{RedisDemo_HostAddress}}/api/cache
+Content-Type: application/json
+{
+  "key": "chave_teste5",
+  "value": "valor_teste",
+  "secondExpiration": 1000
+}
+
+###
+
+GET {{RedisDemo_HostAddress}}/api/cache/chave_teste
+
+###
+
+DELETE {{RedisDemo_HostAddress}}/api/cache/string
+
+###
+
+GET {{RedisDemo_HostAddress}}/api/cache/GetAllKey
+
+###
