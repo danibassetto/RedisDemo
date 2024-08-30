@@ -1,9 +1,6 @@
 ﻿Como instalar redis no Windows? 
 
-https://github.com/microsoftarchive/redis/releases
-
-- Instalar e executar o arquivo msi
-- Marcar opção de criar variável de ambiente durante a instalação
+https://redis.io/docs/latest/operate/oss_and_stack/install/install-redis/install-redis-on-windows/
 
 =========================================================================================
 
